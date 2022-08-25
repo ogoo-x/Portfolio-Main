@@ -1,0 +1,111 @@
+.mainsection {
+  z-index: 2;
+  display: flex;
+  gap: 100px;
+  width: 100%;
+  height: 100vh;
+  flex-direction: row-reverse;
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  width: 100%;
+  margin-left: 84px;
+  margin-right: 84px;
+}
+
+.bimage {
+  z-index: 0;
+  max-width: 460px;
+  max-height: 540px;
+}
+
+.children {
+  flex: 50%;
+  margin: 5px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  color: rgb(0, 0, 0);
+}
+
+.description > h1 {
+  font-size: 56px;
+  line-height: 70px;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 10px;
+  top: 0;
+}
+
+.button {
+  text-decoration: underline;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+.button2 {
+  margin-top: -5px;
+  text-decoration: underline;
+}
+
+.button2:hover {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1264px) {
+  .description > h1 {
+    font-size: 56px;
+    text-align: left;
+    line-height: 0;
+  }
+  .description > p {
+    text-align: left;
+    position: relative;
+  }
+  .cta {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .bimage {
+    max-width: 340px;
+    max-height: 420px;
+  }
+
+  .description > h1 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .container {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+}
